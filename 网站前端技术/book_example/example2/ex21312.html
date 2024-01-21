@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>我的第二个网页</title>
+	    <link rel="stylesheet" href="">
+	    <script>
+			function displayOrNo(){
+				var obj = document.getElementById("blink");
+				obj.hidden = !obj.hidden;
+				var btn = document.getElementById("control")
+				if(obj.hidden){
+					btn.innerHTML='显示';
+				}else{
+					btn.innerHTML='隐藏';
+				} 
+			} 
+		</script>	   
+    </head>
+	<body>
+		<button type="button" id="control" onclick="displayOrNo()">显示
+		</button>
+		<div id="blink" hidden="hidden">
+			Hello,world!
+		</div>
+	</body>
+</html>

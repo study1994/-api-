@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-8</title>
+	<script>
+	window.onload = function() {
+	  userName = form1.userName;
+	  userPass = form1.userPass;
+	 userName.onfocus = function() {
+	   userName.value = "";
+	 }
+	userPass.onfocus = function() {
+	    userPass.value = "";
+	    userPass.type = "password";
+	    }
+	}
+
+		
+	</script>
+</head>
+<body>
+	<form action="" name="form1">
+		<input type="text" value="请输入用户名" name="userName">
+		<input type="text" value="请输入密码" name="userPass">
+		<input type="submit" value="登录">
+	</form>
+</body>
+</html>

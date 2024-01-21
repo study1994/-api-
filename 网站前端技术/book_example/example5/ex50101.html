@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width:100px;
+			height:100px;
+			border:1px solid #B91720;
+			float: left;
+			margin-left:10px;
+		}
+	</style>
+	<script src="js/jquery-1.12.1.js"></script>
+	<script>
+		$(function(){
+			$("div[class='p1']").css({"border":"5px groove red"});
+		})
+	</script>
+</head>
+<body>
+	<div class="p1">1</div>
+	<div class="p1">2</div>
+	<div class="p1">3</div>
+	<div class="p">4</div>
+</body>
+</html>

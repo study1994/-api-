@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.box {
+				width: 150px;
+				height: 50px;
+				float: left;
+				margin-left: 30px;
+				background: red;
+			}
+
+			.select-title {
+				width: 100px;
+				height: 50px;
+				margin-left: 10px;
+				background: yellow;
+				color: black;
+				text-align: center;
+				line-height: 50px;
+				font-size: 15px;
+				float: left;
+			}
+		</style>
+		<script src="js/jquery-1.12.1.js"></script>
+		<script>
+			$(function() {
+				$(".select-title").click(function() {
+					var index = $(this).index(".select-title");
+					alert(index);
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="select-title">1</div>
+		<div class="select-title">2</div>
+		<div class="select-title">3</div>
+		<div class="select-title">4</div>
+		<div class="select-title">5</div>
+		<div class="select-title">6</div>
+	</body>
+</html>

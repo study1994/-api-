@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			div {
+				width: 100px;
+				height: 50px;
+				background: yellow;
+				border: 1px solid black;
+				color: black;
+				float: left;
+				margin: 10px;
+				line-height: 50px;
+				text-align: center;
+			}
+		</style>
+		<script src="js/jquery-1.12.1.js"></script>
+		<script>
+			$(function() {
+				$(".menu:first").css({
+					"color": "red"
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="menu">菜单1</div>
+		<div class="menu">菜单2</div>
+		<div class="menu">菜单3</div>
+		<div class="menu">菜单4</div>
+		<div class="menu">菜单5</div>
+		<div class="menu">菜单6</div>
+	</body>
+</html>

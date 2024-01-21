@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-6-3</title>
+	<script>
+		var a,b,c,max;
+		a = prompt("请您输入第1个数","");
+		b = prompt("请您输入第2个数","");
+		c = prompt("请您输入第3个数","");
+		if(a > b){
+			if(a > c){
+				max = a;
+			}else{
+				max = c;
+			}
+		}else{
+			if(b > c){
+				max = b;
+			}else{
+				max = c;
+			}
+		}
+		alert(a + "、" + b + "、" + c + "三个数中的最大值为" + max);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-4</title>
+	<script>
+		window.onload = function() {
+		    var box = document.getElementById("box");  //box是获取的外层盒子
+		    var title3 = document.createElement("div");  //创建的div标签，内容为“标题3”
+		    title3.innerHTML = "标题3";
+		    var title4 = document.createElement("div");  //创建的div标签，内容为“标题4”
+		    title4.innerHTML = "标题4";
+		    var title = document.getElementsByClassName("title");  //title是根据类获取的元素组，内容依次为“标题1”和“标题2”
+		    box.replaceChild(title4, title[0]);  //使用title4的内容“标题4”替换title元素组的第一个元素“标题1”，title元素组中只剩下“标题2”
+		    box.appendChild(title3);  //在box中追加title3，内容为“标题3”
+		    box.removeChild(title[0]);  //删除title元素组中的第一个元素“标题2”
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="box">
+		<div class="title">标题1</div>
+		<div class="title">标题2</div>		
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-6-4</title>
+	<script>
+		var chengJi,b,dengJi;
+		chengJi = prompt("请您输入一个百分制成绩","");
+		b = Math.floor(chengJi / 10);
+		switch(b){
+			case 10:
+			case 9:
+			    dengJi = "A";
+			    break;
+			case 8:
+			    dengJi = "B";
+			    break;
+			case 7:
+			    dengJi = "C";
+			    break;
+			case 6:
+			    dengJi = "D";
+			    break;
+			default:
+			    dengJi = "E";
+		}
+		alert(chengJi + "对应的等级为" + dengJi);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-2</title>
+	<script>
+		window.onload = function() {
+		    var title = document.getElementsByClassName("title");
+		    console.log(title[0].style.color);
+		    title[1].style.color = "red";
+		}
+		
+	</script>
+</head>
+<body>
+	<div class="title" style="color:#000;">标题1</div>
+	<div class="title">标题2</div>
+</body>
+</html>

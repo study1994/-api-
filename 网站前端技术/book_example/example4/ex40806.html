@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-8-6</title>
+	<script>
+	window.onload=function(){
+		var text = document.getElementsByClassName("text");
+		var stringS = ["衣服","帽子","裤子","鞋","围巾","手套","头饰"];
+		for(var i = 0; i < stringS.length; i++){
+			text[i].innerHTML = stringS[i];
+		} 
+	}
+	</script>
+</head>
+<body>
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-7-1</title>
+	<script>
+		function maxS(a,b,c){ //定义函数maxS
+			var max;
+			if(a > b){
+				if(a > c){
+					max = a;
+				}else{
+					max = c;
+				}
+			}else{
+				if(b > c){
+					max = b;
+				}else{
+					max = c;
+				}
+			}
+			return max;
+		}
+		alert(maxS(12,34,9));  //调用函数maxS
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

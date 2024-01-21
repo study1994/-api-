@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-7-2</title>
+	<script>
+		var minS = function(a,b,c){	//定义函数minS
+		var min;
+		if(a < b){
+			if(a < c){
+				min = a;
+			}else{
+				min = c;
+			}
+		}else{
+			if(b < c){
+				min = b;
+			}else{
+				min = c;
+			}
+		}
+		return min;
+	}
+		alert(minS(12,34,9));	//调用函数minS
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

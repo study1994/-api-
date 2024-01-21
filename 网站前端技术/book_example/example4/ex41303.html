@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-13-3</title>
+	<script>
+	window.onload=function(){
+		document.getElementById("text1").innerHTML="页面位置是"+window.location;
+		document.getElementById("text2").innerHTML="主机域名是"+window.location.hostname;
+		document.getElementById("text3").innerHTML="页面路径是"+window.location.pathname;	
+		document.getElementById("text4").innerHTML="Web协议是"+window.location.protocol;
+		document.getElementById("text5").innerHTML="主机端口号是"+window.location.port;
+		}
+	</script>
+</head>
+<body>
+	<div id="text1"></div>
+	<div id="text2"></div>
+	<div id="text3"></div>
+	<div id="text4"></div>
+	<div id="text5"></div>
+	<input type="button" value="重新定向1" 
+onclick="window.location='http://www.baidu.com';">
+<input type="button" value="重新定向2" 
+onclick="window.location.assign('http://www.baidu.com');">
+</body>
+</html>

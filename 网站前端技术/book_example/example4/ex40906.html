@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-9-6</title>
+	<script>
+		function person(x,y,z){
+			this.name = x;
+			this.color = y;
+			this.age = z;
+			this.callName = function(){
+				alert(this.name);
+			}
+		}
+	    var personA=new person("李宁","黄色",32);
+	    personA.callName();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

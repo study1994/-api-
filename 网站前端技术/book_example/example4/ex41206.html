@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-6</title>
+	<script>
+		window.onload=function(){
+		    var div=document.getElementsByTagName("div")[0];
+		    div.onmouseover=function(){
+		        div.innerHTML="鼠标移至";
+		    }
+		    div.onmouseout=function(){
+		        div.innerHTML="鼠标移出";
+		    }
+		}
+		
+	</script>
+</head>
+<body>
+	<div>原始状态</div>
+</body>
+</html>

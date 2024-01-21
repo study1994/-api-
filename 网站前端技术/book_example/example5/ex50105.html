@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.first {
+				width: 200px;
+				height: auto;
+				float: left;
+				margin-left: 30px;
+			}
+		</style>
+		<script src="js/jquery-1.12.1.js"></script>
+		<script>
+			$(function() {
+				$("#huabei li").css({
+					"margin-top": "10px"
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<ul id="zhixia" class="first">直辖市
+			<li>北京</li>
+			<li>天津</li>
+			<li>上海</li>
+			<li>重庆</li>
+		</ul>
+		<ul id="huabei" class="first">华北地区
+			<li>内蒙古</li>
+			<li>河北</li>
+			<li>山西<br>
+				<ul>
+					<li>太原</li>
+					<li>大同</li>
+					<li>运城</li>
+				</ul>
+			</li>
+		</ul>
+		<ul id="huanan" class="first">华南地区
+			<li>香港</li>
+			<li>澳门</li>
+			<li>广东<br />
+				<ul>
+					<li>广州</li>
+					<li>深圳</li>
+					<li>珠海</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

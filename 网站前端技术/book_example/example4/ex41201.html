@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-1</title>
+	<script>
+		window.onload = function() {
+		    var box = document.getElementById("a-box");  //“box”是根据id值“a-box”获取的元素，它的内容是“id元素”
+		    var a = document.getElementsByTagName("a");  //“a”是根据标签名“a”获取的数组，共有三个元素，内容依次是“百度一下”“新浪”“微博”
+		    var title = document.getElementsByClassName("title");  //“title”是根据类名“title”获取的数组，共有两个元素，内容依次是“标题1”和“标题2”
+		    var content = document.querySelectorAll(".content");  //“content”是根据选择器名称“.content”获取的数组，共有两个元素，内容依次是“内容1”和“内容2”
+		    console.log(box.innerHTML);  //在控制台输出box的内容“id元素”
+		    console.log(a[2].innerHTML);  //在控制台输出a对象数组的第3个元素的内容“微博”
+		    console.log(title[1].innerHTML);  //在控制台输出title对象数组的第2个元素的内容“标题2”
+		    content[1].innerHTML = "标题二";  //将“标题二”赋给content对象数组的第2个元素，覆盖掉该元素原来的内容“标题2”
+			console.log(content[1].innerHTML);  //在控制台输出content对象数组的第2个元素的内容“标题二”
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="a-box">id元素</div>
+	<a href="http://www.baidu.com">百度一下</a>
+	<a href="http://www.sina.com.cn">新浪</a>
+	<a href="http://www.weibo.com">微博</a>
+	<div class="title">标题1</div>
+	<div class="title">标题2</div>
+	<div class="content">内容1</div>
+	<div class="content">内容2</div>
+</body>
+</html>

@@ -1,8 +1,8 @@
 public class Chess {
 	public static void main(String[] args) {
-		char knight = 'Âí';
-		char bishop = 'Ïó';
-		char pawn = '×ä';
-		System.out.println(knight + "×ßÈÕ£¬" + bishop + "×ßÌï£¬Ğ¡" + pawn + "Ò»È¥²»»Ø»¹¡£");
+		char knight = 'é©¬';
+		char bishop = 'è±¡';
+		char pawn = 'å’';
+		System.out.println(knight + "èµ°æ—¥ï¼Œ" + bishop + "èµ°ç”°ï¼Œå°" + pawn + "ä¸€å»ä¸å›è¿˜ã€‚");
 	}
 }

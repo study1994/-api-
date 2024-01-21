@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js示例4-12-9</title>
+	<script>
+	window.onload = function() {
+	  userName = form1.userName;
+	  userPass = form1.userPass;
+	 userName.onfocus = function() {
+	   userName.value = "";
+	 }
+	userPass.onfocus = function() {
+	    userPass.value = "";
+	    userPass.type = "password";
+	    }
+	var regName = /^\D\w{5,15}$/;
+	var ts = document.getElementById("ts");   
+	userName.oninput = function() {
+	  if (!regName.test(userName.value)) {
+	    ts.style.display = "block";
+	  } else {
+	    ts.style.display = "none";
+	  }
+	}
+	}
+
+		
+	</script>
+</head>
+<body>
+	<form action="" name="form1">
+		<div id="ts" style="display:none;">用户名必须是6-16位的数字、字母、下划线，且第一位不能是数字</div>
+		<input type="text" value="请输入用户名" name="userName">
+		<input type="text" value="请输入密码" name="userPass">
+		<input type="submit" value="登录">
+	</form>
+</body>
+</html>
