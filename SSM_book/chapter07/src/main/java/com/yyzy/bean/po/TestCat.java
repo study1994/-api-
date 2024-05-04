@@ -17,6 +17,5 @@ public class TestCat {
         System.out.println(cat3);
         Cat3Factory myBean3Factory = (Cat3Factory) applicationContext.getBean("myBean3Factory");
         System.out.println(myBean3Factory);
-        System.out.println(myBean3Factory);
     }
 }
