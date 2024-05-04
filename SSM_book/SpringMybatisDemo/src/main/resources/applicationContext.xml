@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:component-scan base-package="com.test.service"></context:component-scan>
+
+    <!-- 1. 配置数据源 DriverManagerDataSource -->
+    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatisdb"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <!-- 2. 配置 SqlSessionFactoryBean dataSource：数据源 mapperLocations：MyBatis的映射文件 -->
+    <bean id="ssf" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="ds"></property>
+        <property name="mapperLocations" value="classpath:mapper/*-mapper.xml"></property>
+    </bean>
+
+    <!-- 3. 为数据访问层接口配置一个扫描器 MapperScannerConfigurer 去扫描接口并且以动态代理的形式为接口生成实例对象 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactory" ref="ssf"></property>
+        <property name="basePackage" value="com.test.dao"></property>
+    </bean>
+
+</beans>
