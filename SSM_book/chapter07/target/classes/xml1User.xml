@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cat" class="com.yyzy.bean.po.Cat">
+        <property name="name" value="小花猫"></property>
+        <property name="age" value="3"></property>
+    </bean>
+
+    <bean id="cat2" class="com.yyzy.bean.po.Cat">
+        <property name="name" value="小白猫"></property>
+        <property name="age" value="2"></property>
+    </bean>
+
+    <bean id="user" class="com.yyzy.xml1.User">
+        <property name="username" value="李宁"></property>
+        <property name="sex" value="男"></property>
+        <property name="age" value="23"></property>
+
+        <!-- 为数组注入值 -->
+        <property name="a">
+            <array>
+                <value>10</value>
+                <value>20</value>
+                <value>30</value>
+                <value>40</value>
+            </array>
+        </property>
+
+        <!-- List集合的数据类型为String，使用value -->
+        <property name="list">
+            <list>
+                <value>tom</value>
+                <value>rose</value>
+                <value>mike</value>
+            </list>
+        </property>
+
+        <!-- List集合的数据类型为自定义类型，使用ref -->
+        <property name="listcat">
+            <list>
+                <ref bean="cat"></ref>
+                <ref bean="cat2"></ref>
+            </list>
+        </property>
+
+        <!-- Map集合属性赋值时，使用entry -->
+        <property name="mapl">
+            <map>
+                <entry key="SSM框架" value="1本"/>
+                <entry key="javaWeb" value="5本"/>
+                <entry key="MySql数据库" value="10本"/>
+            </map>
+        </property>
+
+        <!-- Map集合属性赋值时，使用value-ref -->
+        <property name="mapcat">
+            <map>
+                <entry key="cat" value-ref="cat"/>
+                <entry key="cat2" value-ref="cat2"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

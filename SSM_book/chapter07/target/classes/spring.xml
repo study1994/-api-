@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cat" class="com.yyzy.bean.po.Cat"></bean>
+    <bean id="cat2" class="com.yyzy.bean.factory.CatFactory" factory-method="getStaticCat"/>
+    <!-- 配置工厂 -->
+    <bean id="myBean3Factory" class="com.yyzy.bean.factory.Cat3Factory"/>
+    <!-- 使用 factory-bean 属性指向配置的实例工厂，使用 factory-method 属性确定使用工厂中的哪个方法 -->
+    <bean id="cat3" factory-bean="myBean3Factory" factory-method="createBean"/>
+    <bean id="catv2" class="com.yyzy.bean.po.Catv2" init-method="initCat" destroy-method="destroyCat"></bean>
+
+</beans>

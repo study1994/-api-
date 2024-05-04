@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="com.yyzy.xml.User">
+        <property name="username" value="李宁"></property>
+        <property name="sex" value="男"></property>
+        <property name="age" value="23"></property>
+    </bean>
+
+    <bean id="user2" class="com.yyzy.xml.User">
+        <constructor-arg index="0" value="tom"></constructor-arg>
+        <constructor-arg index="1" value="男"></constructor-arg>
+        <constructor-arg index="2" value="23"></constructor-arg>
+    </bean>
+
+    <bean id="cat" class="com.yyzy.bean.po.Cat">
+        <property name="name" value="小花猫"></property>
+        <property name="age" value="3"></property>
+    </bean>
+
+    <bean id="user3" class="com.yyzy.xml.User">
+        <property name="username" value="李宁"></property>
+        <property name="sex" value="男"></property>
+        <property name="age" value="23"></property>
+        <property name="cat" ref="cat"></property>
+    </bean>
+</beans>

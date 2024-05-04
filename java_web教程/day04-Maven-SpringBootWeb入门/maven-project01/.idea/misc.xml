@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/03springboot-web-req-resp/pom.xml" />
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/04springboot-web-req-resp/pom.xml" />
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/01统一响应结果/pom.xml" />
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/02三层架构拆分/pom.xml" />
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/03IOC_DI入门/pom.xml" />
+        <option value="$PROJECT_DIR$/../../day05-SpringBootWeb请求响应/04IOC_DI详解/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../java_web_bibi2024/day11_Mybatis/my_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../java_web_bibi2024/day11_Mybatis/springboot-mybatis-quickstart_all/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../java_web_bibi2024/day11_Mybatis/springboot-mybatis-quickstart/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>

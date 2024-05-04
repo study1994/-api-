@@ -1,0 +1,6 @@
+com\test\test\TestDao.class
+com\test\dao\IUserInfoDao.class
+com\test\bean\UserInfo.class
+com\test\dao\ILoginInfoDao.class
+com\test\factory\MyBatisFactory.class
+com\test\bean\LoginInfo.class

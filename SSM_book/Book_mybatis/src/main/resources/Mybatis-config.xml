@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 数据源环境配置 -->
+    <environments default="mysql">
+        <environment id="mysql">
+            <!-- 使用JDBC数据源 -->
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- 根据实际情况填写数据库连接信息 -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatisdb"/>
+                <property name="username" value="root"/>
+                <property name="password" value="1234"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 映射文件位置配置 -->
+    <mappers>
+        <!-- 假设Mapper接口对应的XML文件位于resources的mapper目录下 -->
+        <mapper resource="IBookDao-mapper.xml"></mapper>
+        <!-- 可以继续添加其他Mapper映射文件 -->
+    </mappers>
+</configuration>
