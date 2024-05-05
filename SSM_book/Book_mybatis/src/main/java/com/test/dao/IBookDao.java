@@ -9,6 +9,6 @@ public interface IBookDao{
     public int updateBookByBid(Book book) throws Exception;
     public Book queryBookByBid(Integer bid) throws Exception;
     public List<Book>queryAllBook() throws Exception;
-    public Integer queryBookCoun() throws Exception;
+    public Integer queryBookCount() throws Exception;
 }
 

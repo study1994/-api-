@@ -7,7 +7,7 @@
             <transactionManager type="jdbc"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatisdb"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/itcast?characterEncoding=utf-8"/>
                 <property name="username" value="root"/>
                 <property name="password" value="1234"/>
             </dataSource>
@@ -16,6 +16,8 @@
     <mappers>
         <!-- Add your mappers here -->
         <mapper resource="ILoginInfoDao-mapper.xml"></mapper>
-        <mapper resource="IUserlnfoDao-mapper.xml"></mapper>
+        <mapper resource="IUserInfoDao-mapper.xml"></mapper>
+        <mapper resource="IStudentDao-mapper.xml"></mapper>
+        <mapper resource="IClassesDao-mapper.xml"></mapper>
     </mappers>
 </configuration>

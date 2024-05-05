@@ -1,5 +1,4 @@
 package com.test2.dao;
-
 import com.test2.bean.Classes;
 
 public interface IClassesDao {

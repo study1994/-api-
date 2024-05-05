@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Map;
 
 public class TestMain {
-    IBookDaodao = null;
-    SqlSessionsession = null;
+    IBookDao dao = null;
+    SqlSession session = null;
 
     @Before
     public void before() {
@@ -65,5 +65,4 @@ public class TestMain {
         int count = dao.queryBookCount();
         System.out.println(count);
     }
-}
 }

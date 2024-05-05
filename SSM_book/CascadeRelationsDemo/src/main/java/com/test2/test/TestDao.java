@@ -1,9 +1,8 @@
 package com.test2.test;
 
-import com.test.bean.LoginInfo;
-import com.test.dao.ILoginInfoDao;
 import com.test.factory.MyBatisFactory;
 import com.test2.bean.Classes;
+import com.test2.dao.IStudentDao;
 import com.test2.dao.IClassesDao;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Before;

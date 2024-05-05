@@ -1,0 +1,6 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test2.dao.IStudentDao">
+    <select id="queryStudentByCid" resultType="com.test2.bean.Student" parameterType="int">
+        SELECT * FROM tab_student WHERE cid = #{cid}
+    </select>
+</mapper>

@@ -1,5 +1,6 @@
 package com.test2.dao;
 
+import com.test2.bean.Classes;
 import com.test2.bean.Student;
 import java.util.List;
 
